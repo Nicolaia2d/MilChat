@@ -1,0 +1,7 @@
+torch
+transformers>=4.41.2
+accelerate>=1.8.1
+bitsandbytes>=0.43.0
+sentence-transformers>=2.7.0
+faiss-cpu>=1.8.0
+flask>=3.0.0
