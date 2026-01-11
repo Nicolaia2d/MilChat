@@ -1,6 +1,7 @@
-# 📚 READMEDETAILS — Lokal NorwAI Mistral 7B LLM Fullstack
+# Lokal NorwAI Mistral 7B LLM Fullstack
 
-Dette er en **fullstendig beskrivelse** av hvordan du har satt opp en **lokal LLM-stack** med:
+Beskrivelse av hvordan systemet er satt opp:
+
 
 - Hugging Face Transformers
 - Mistral 7B-modell
@@ -13,11 +14,11 @@ Dette er en **fullstendig beskrivelse** av hvordan du har satt opp en **lokal LL
 
 ---
 
-## ✅ **Hva er dette prosjektet?**
+## **Hva er dette prosjektet?**
 
-Du har laget en **lokal pipeline** som:
+Jeg har laget en **lokal pipeline** som:
 
-- Kjører **NorwAI Mistral 7B instruct** lokalt, helt uten skytjeneste.
+- Kjører **NorwAI Mistral 7B instruct** lokalt, uten skytjeneste.
 - Bruker Hugging Face `transformers` til å laste og kjøre modellen.
 - Kjører alt på din **lokale GPU** via `torch` (PyTorch) med `torch_dtype=torch.float16`.
 - Bruker `accelerate` + `device_map="auto"` for å fordele vektene smart.
@@ -25,7 +26,7 @@ Du har laget en **lokal pipeline** som:
 
 ---
 
-## 🗂️ **Hva inneholder prosjektet?**
+## **Hva inneholder prosjektet?**
 
 | Fil                | Beskrivelse                                                                 |
 | ------------------ | --------------------------------------------------------------------------- |
@@ -41,10 +42,11 @@ Du har laget en **lokal pipeline** som:
 
 ---
 
-## 🔒 **Token — Hugging Face**
+## **Token — Hugging Face**
 
 - Du laget en **fine-grained access token** på [huggingface.co/settings/tokens](https://huggingface.co/settings/tokens).
 - Du logget inn:
   ```bash
   huggingface-cli login
   ```
+
